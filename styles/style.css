@@ -1,0 +1,221 @@
+:root {
+    --scheme-color: #005b6a
+
+}
+
+body {
+    margin: 0px;
+    background: var(--scheme-color) url("../images/bg.jpg") fixed;
+    background-size: cover;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 150%;
+    color: white;
+}
+
+/*frame for all elements*/
+.outerframe {
+    background-color: rgba(200, 200, 200, 0.55);
+    width: 90%;
+    padding: 2%;
+    margin: 0px auto;
+    margin-bottom: 2%;
+    border-radius: 0px 0px 1em 1em;
+    box-shadow: 2px 2px 5px var(--scheme-color);
+}
+
+/*head line*/
+header {
+    padding-bottom: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text {
+    text-align: center;
+}
+
+#logo {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 2%;
+    filter: invert();
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+hr {
+    color: white;
+}
+
+/*main content*/
+.innerframe {
+    background-color: white;
+    color: var(--scheme-color);
+    padding: 2%;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px var(--scheme-color);
+    margin-bottom: 1%;
+}
+
+/* Input elements*/
+#form_input, #introduction, #output {
+    justify-content: center;
+    text-align: center;
+}
+
+.input_element, .button{
+    margin: 2%;
+}
+
+label {
+    margin-bottom: 1%;
+}
+
+.text_field {
+    border: 2px solid var(--scheme-color);
+    border-radius: 0.5em;;
+    font-size: 100%;
+    width: 30%;
+    transition: width 0.2s ease-in-out;
+}
+
+.text_field:hover {
+    background-color: darkgray;
+    width: 35%;
+}
+
+.text_field:focus {
+    background-color: darkgray;
+    width: 50%;
+}
+
+.button {
+    background-color: var(--scheme-color);
+    color: white;
+    font-size: 100%;
+    border-radius: 0.5em;
+    width: 25%;
+    transition: width 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: darkgray;
+    width: 30%;
+}
+
+
+/*Table design*/
+table, th, td {
+    border: 2px solid var(--scheme-color);
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: var(--scheme-color);
+    color: white;
+}
+
+tr:hover {
+    background-color: var(--scheme-color);
+    color: white;
+
+}
+
+td:hover {
+    background-color: #008599;
+}
+
+table {
+    width: 40%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#table_box {
+    display: flex;
+    justify-content: center;
+}
+
+/*different colors for table elements*/
+.table_part-1-1 {
+    background-color: #e6fcff;
+}
+.table_part-1-2 {
+    background-color: #ccf8ff;
+}
+.table_part-2-1 {
+    background-color: #99f1ff;
+}
+.table_part-2-2 {
+    background-color: #b3f5ff;
+}
+.table_part-3-1 {
+    background-color: #66ebff;
+}
+.table_part-3-2 {
+    background-color: #80eeff;
+}
+
+.vertical {
+    font-style: italic;
+}
+
+/*footer*/
+footer {
+    padding-top: 1%;
+}
+
+.foot:hover {
+    color: var(--scheme-color);
+}
+
+/*responsive design*/
+@media only screen and (max-width: 1200px) {
+    .outerframe {
+        padding: 5%;
+    }
+    #logo {
+        float: none;
+    }
+    .header_box {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    label {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .text_field {
+        width: 90%;
+    }
+    .text_field:hover {
+        width: 92%;
+    }
+    .text_field:focus {
+        width: 95%;
+    }
+    .button {
+        width: auto;
+    }
+    .button:hover {
+        width: auto;
+    }
+    table {
+        width: 80%;
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="currency_calculator">Currency Calculator</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/currency-ico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+    <script src="script/calculation.js"></script>
+</head>
+<body>
+    <!--frame for alle elements-->
+    <div class="outerframe">
+        <header>
+            <a href="index.html">
+            <div class="header_box">
+                <img id="logo" src="images/currency-ico.png" alt="Currency-Logo">
+            </div>
+            <h1 class="header_box">Currency Calculator</h1>
+            <h3 class="header_box">This currency calculator shows the exchange rate table for 2 currencies</h3>
+            <hr>
+            </a>
+        </header>
+        <!--frame for main elements-->
+        <div class="innerframe">
+            <main>
+                <!--section for input elements-->
+                <section>
+                    <h4 id="introduction">Please enter your currencies:</h4>
+                    <!--user input-->
+                    <form id="form_input">
+                        <!--text field for currency 2-->
+                        <div class="input_element">
+                        <label for="string1">from Currency:</label>
+                        <input name="string1" id="string1" class="text_field" type="text"
+                               placeholder=" Euro, Dollar,..." required>
+                        </div>
+                        <!--text field for currency 2-->
+                        <div class="input_element">
+                        <label for="string2">to Currency:</label>
+                        <input name="string2" id="string2" class="text_field" type="text"
+                               placeholder=" Euro, Dollar,..." required>
+                        </div>
+                        <!--text field for exchange rate-->
+                        <div class="input_element">
+                        <label for="exValue">Exchange rate:</label>
+                        <input name="exValue" id="exValue" class="text_field" type="number"
+                                   placeholder=" 1.1316, 0.8523,..." required step="0.0001">
+                        </div>
+                        <!--buttons-->
+                        <div class="input_element">
+                        <input id="swap" class="button" type="submit" value="   SWAP CURRENCIES   ">
+                        <input id="calc" class="button" type="submit" value="   CALCULATE   ">
+                        </div>
+                    </form>
+                </section>
+                <!--dynamic content-->
+                <section id="output">
+                    <p  id="info"><!--filled by typescript--></p>
+                    <div id="table_box"><!--filled by typescript--></div>
+                    <div id="table_text"></div>
+                </section>
+            </main>
+        </div>
+        <footer dir="rtl"><a class="foot" href="sites/impressum.html">Impressum</a></footer>
+    </div>
+</body>
+</html>
